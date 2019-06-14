@@ -3,12 +3,12 @@ GB2312：双字节
 Unicode：通常双字节
 utf-8：Unicode可变长度编码，英文、数字单字节，汉字3字节(生僻字4-6字节)
 
-ord():获取字符的整数表示
+####ord():获取字符的整数表示
 	ord('A') =>65
-chr():把编码转换为对应的字符
+####chr():把编码转换为对应的字符
 	chr(65) =>A
 
-用中文字符16进制表示
+####用中文字符16进制表示
 	'\u4e2d\u6587' => 中文
 
 
@@ -23,14 +23,23 @@ Python的字符串类型是str，在内存中以Unicode表示，一个字符对�
 	(如果bytes中包含无法解码的字节，decode()会报错，可以使用errors='ignore'忽略错误的字节)
 	b'\xe4\xb8\xad\xff'.decode('utf-8', errors='ignore')  => '中'
 
-字符串长度
+####字符串长度
 len('')
 
-bytes字节数
+####bytes字节数
 len(b'\xe4\xb8\xad\xe6\x96\x87')
 6
 
 
-.py文件标注使用utf-8
-'#!/usr/bin/env python3'
-'# -*- coding: utf-8 -*-'
+####.py文件标注使用utf-8  
+'#!/usr/bin/env python3'  为了告诉linux/OS X系统，是一个python可执行程序，windows系统会忽略掉  
+'# -*- coding: utf-8 -*-'  标识按照utf-8 读取源代码  
+
+格式化 % 表示  
+'Hello, %s' % 'world'  => Hello, world  
+
+常见占位符  
+%d	整数  
+%f	浮点数  
+%s	字符串  
+%x	十六进制整数  

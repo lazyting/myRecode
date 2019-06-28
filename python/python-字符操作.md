@@ -34,6 +34,7 @@ len(b'\xe4\xb8\xad\xe6\x96\x87')
 #### .py文件标注使用utf-8  
 '#!/usr/bin/env python3'  为了告诉linux/OS X系统，是一个python可执行程序，windows系统会忽略掉  
 '# -*- coding: utf-8 -*-'  标识按照utf-8 读取源代码  
+'#coding=utf-8'   注意：#coding=utf-8 的 = 号两边不要空格。
 
 #### 格式化 % 表示  
 'Hello, %s' % 'world'  => Hello, world  
